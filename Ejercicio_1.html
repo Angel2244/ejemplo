@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificacion de parrafo</title>
+</head>
+
+<body>
+    <p id="mensaje">primer texto</p>
+    <button id="btnCambiar">Cambiar texto</button>
+    <script>
+        const parrafo = document.getElementById("mensaje");
+        const boton = document.getElementById("btnCambiar");
+
+        boton.addEventListener("click", function () {
+            parrafo.textContent = "¡Hola, DOM!";
+        }
+        );
+    </script>
+</body>
+
+</html>
